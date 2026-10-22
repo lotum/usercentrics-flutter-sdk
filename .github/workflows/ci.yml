@@ -116,10 +116,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - name: Setup Flutter
-        uses: ./.github/actions/setup-flutter
+        uses: flutter-actions/setup-flutter@adb607ae976a9e00473569facfc69813c637a060 # v4.3
         with:
           channel: 'stable'
-          flutter-version: '3.13.5'
+          version: '3.13.5'
       - name: Get dependencies
         run: flutter pub get
       - name: Setup Pods
@@ -159,10 +159,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - name: Setup Flutter
-        uses: ./.github/actions/setup-flutter
+        uses: flutter-actions/setup-flutter@adb607ae976a9e00473569facfc69813c637a060 # v4.3
         with:
           channel: 'stable'
-          flutter-version: '3.13.5'
+          version: '3.13.5'
       - name: Get dependencies
         run: flutter pub get
       - name: Build
